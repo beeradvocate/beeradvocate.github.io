@@ -1,0 +1,125 @@
+/* ::::: Hello MOM!::::: */
+
+* { margin: 0px; padding: 0px; }
+body { background: url('bg.jpg') no-repeat fixed center top / cover  rgb(255, 255, 255); color: rgb(0, 0, 0); font: 14px "Open Sans", sans-serif;font-weight: 300; }
+.hidden { display: none; }
+.noselect { -moz-user-select: none; }
+#floaty-thing { height: 690px; margin: 50px auto 0px; position: relative; width: 850px; }
+#floaty-thing .resumehelper { background: url('helper.png') no-repeat scroll 0% 0% transparent; height: 103px; left: 375px; position: absolute; top: 75px; width: 327px; z-index: 5; }
+#wp7 { height: 690px; width: 455px; }
+#frame { height: 690px; position: relative; width: 455px; }
+#frame .top { background: url('frame-top.png') no-repeat scroll 0% 0% transparent; cursor: move; height: 52px; left: 0px; position: absolute; width: 455px; z-index: 5; }
+#frame .left {
+	background: url('frame-left.png') no-repeat scroll 0% 0% transparent; cursor: move;
+	height: 437px;
+	left: 67px;
+	position: absolute;
+	top: 52px;
+	width: 32px;
+	z-index: 5;
+}
+#frame .right {
+	background: url('frame-right.png') no-repeat scroll 0% 0% transparent; cursor: move;
+	height: 437px;
+	left: 357px;
+	position: absolute;
+	top: 52px;
+	width: 32px;
+	z-index: 5;
+}
+#frame .bottom {
+	background: url('frame-bottom.png') no-repeat scroll 0% 0% transparent; cursor: move;
+	bottom: 0px;
+	height: 201px;
+	position: absolute;
+	width: 455px;
+	z-index: 5;
+	left: 0px;
+}
+#frame .back {  no-repeat scroll 0% 0% transparent; bottom: 155px; cursor: pointer; height: 39px; left: 80px; position: absolute; width: 96px; z-index: 5; }
+#frame .home {  no-repeat scroll 0% 0% transparent; bottom: 155px; cursor: pointer; height: 39px; left: 183px; position: absolute; width: 90px; z-index: 5; }
+#frame .search {  no-repeat scroll 0% 0% transparent; bottom: 155px; cursor: pointer; height: 39px; left: 280px; position: absolute; width: 95px; z-index: 5; }
+#title {
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 1);
+	position: absolute;
+	top: 15px;
+	left: 675px;
+	width: 550px;
+	height: 600px;
+	cursor: move;
+}
+#title .name { font-size: 50px; margin: 20px 10px 0px 25px; color: white;}
+#title .name span { font-weight: bold; color: black;  }
+#title .steps { font-size: 25px; margin: 0px 30px 40px; color: white; background-image: url('../images/stonecold.gif');
+ background-repeat: no-repeat; 
+	 background-size: 100% 100%; 
+	 height: 460px; width: 540px;	
+	 }
+#content { background: none repeat scroll 0% 0% rgb(255, 255, 255); height: 800px; left: 10px; overflow-y: hidden; position: absolute; top: 10px; }
+#viewport { height: 500px; position: relative; width: 600px; }
+#content .window-size { float: left; height: 1500px; position: absolute; width: 500px; z-index: 2; }
+#content .time {font-size: 13px; position: absolute; color: white; right: 5px; top: 2px; }
+#content .lock-screen { background: url('../images/stoned.png') no-repeat scroll 0% 0% transparent; cursor: n-resize; z-index: 4; }
+#content .lock-screen .text { bottom: 50px; font-size: color: black; 30px; left: 35px;  top: 75px; position: absolute; }
+#content .home-screen { background: url('') no-repeat scroll 0% 0% transparent; cursor: n-resize; z-index: 4; }
+#content .home-screen .arrow { background: url('arrows.png') no-repeat scroll 0px 0px transparent; cursor: pointer; height: 24px; left: 230px; position: absolute; top: 50px; width: 24px; }
+#content .home-screen .boxes {
+	left: 30px;
+	list-style: none outside none;
+	position: relative;
+	top: 800px;
+	width: 262px;
+}
+#content .home-screen .box { background-color: rgb(255, 255, 255); ; float: left; margin: 0px 0px 0px 0px;  }
+#content .home-screen .phone {
+	background-image: url('../images/stonecold.gif'); 
+	background-repeat: no-repeat; 
+	 background-size: 100% 100%; 
+	 height: 460px; width: 540px;	
+	   }
+#content .home-screen .lists { left: 25px; list-style: none outside none; position: relative; top: -45px; width: 205px; }
+#content .home-screen .list { cursor: pointer; height: 35px; margin-bottom: 15px; position: relative; }
+#content .home-screen .list span { font-size: 20px; left: 45px; position: absolute; top: 5px; color: black;}
+#content .home-screen li.list div { background-color: rgb(27, 161, 226); height: 35px; width: 35px; }
+#content .home-screen .map div { background-image: url('app-list.png'); background-position: 0px 0px; }
+#content .home-screen .gallery div { background-image: url('app-list.png'); background-position: -35px 0px; }
+#content .home-screen .settings div { background-image: url('app-list.png'); background-position: -70px 0px; }
+#content #search { background-color: rgb(255, 255, 255); width:50%; height:50%;}
+#content #phone { background-color: rgb(255, 255, 255); }
+#content #phone .tip { left: 5px; position: absolute; top: 25px; }
+#content #phone .number { font-size: 25px; left: 5px; position: absolute; top: 42px; }
+#content #phone .backspace { background-image: url('backspace.png'); cursor: pointer; height: 15px; left: 225px; position: absolute; top: 51px; width: 22px; }
+#content #phone .info { font-size: 12px; left: 5px; position: absolute; top: 90px; }
+#content #phone .dial-pad { background-color: rgb(58, 58, 58); bottom: 0px; height: 285px; left: 0px; position: absolute; width: 262px; }
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxuw_rQOTGi-AJs5XCWaKIhU.woff) format('woff');
+}
